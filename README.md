@@ -3,6 +3,11 @@ elvui-mac
 
 A small bash script for installing and updating ElvUI on Mac.
 
+Important
+---------
+
+If you are running this script for the first time and you already have ElvUI installed, you should delete the existing ElvUI folders first. Otherwise unexpected things might occur.
+
 Usage
 -----
 
