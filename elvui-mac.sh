@@ -1,11 +1,17 @@
 #!/bin/bash
 # elvui-mac.sh
 # Steven Indzeoski
-# Version 1.0.1
+# Version 1.0.2
+
+WOW_DIR=/Applications/World\ of\ Warcraft/Interface
+E_XCD=86
 
 # Check if git is installed.
 if hash git 2>/dev/null; then
-	cd /Applications/World\ of\ Warcraft/Interface/
+	cd "$WOW_DIR" || {
+		echo "Unable to change to WoW directory." >&2
+		exit $E_XCD;
+	}
 
 	# Check if ElvUI is already installed.
 	if [ -d "ElvUI" ]; then
@@ -24,6 +30,8 @@ if hash git 2>/dev/null; then
 		ln -s ../ElvUI/ElvUI_Config/ ElvUI_Config
 		echo "ElvUI installed."
 	fi
+
+	exit 0
 else
-	echo "You must install git first."
+	echo "You must install git first." >&2
 fi
