@@ -1,7 +1,7 @@
 #!/bin/bash
 # elvui-mac.sh
 # Steven Indzeoski
-# Version 1.0.1
+# Version 1.0.2
 
 # Check if git is installed.
 if hash git 2>/dev/null; then
