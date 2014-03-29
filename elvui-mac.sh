@@ -24,7 +24,7 @@ if hash git 2>/dev/null; then
 	else
 		# Install ElvUI
 		echo "Installing ElvUI..."
-		git clone http://git.tukui.org/Elv/elvui.git
+		git clone --depth 1 http://git.tukui.org/Elv/elvui.git
 		cd AddOns/
 		ln -s ../ElvUI/ElvUI/ ElvUI
 		ln -s ../ElvUI/ElvUI_Config/ ElvUI_Config
