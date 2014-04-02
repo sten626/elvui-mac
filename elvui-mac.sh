@@ -1,7 +1,7 @@
 #!/bin/bash
 # elvui-mac.sh
 # Steven Indzeoski
-# Version 1.0.2
+# Version 1.1.0
 
 WOW_DIR=/Applications/World\ of\ Warcraft/Interface
 E_XCD=86
