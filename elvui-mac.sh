@@ -1,7 +1,7 @@
 #!/bin/bash
 # elvui-mac.sh
 # Steven Indzeoski
-# Version 1.1.0
+# Version 1.2.0
 
 WOW_DIR=/Applications/World\ of\ Warcraft/Interface
 DESKTOP_INSTALL_PATH=~/Desktop/elvui-mac
